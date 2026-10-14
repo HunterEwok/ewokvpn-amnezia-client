@@ -35,7 +35,7 @@ PageType {
                 Layout.preferredWidth: 147
                 Layout.preferredHeight: 115
 
-                source: "qrc:/images/amneziaBigLogo.png"
+                source: "qrc:/images/ewokBigLogo.png"
                 sourceClipRect: Qt.rect(192, 204, 980, 769)
                 fillMode: Image.PreserveAspectFit
                 smooth: true

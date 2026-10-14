@@ -3,8 +3,7 @@
         <file>../fonts/pt-root-ui_vf.ttf</file>
     </qresource>
     <qresource prefix="/images">
-        <file>amneziaBigLogo.png</file>
-        <file>AmneziaVPN.png</file>
+        <file>ewokBigLogo.png</file>
         <file>controls/alert-circle.svg</file>
         <file>update/updateHeroDark.jpg</file>
         <file>update/plus-circle.svg</file>

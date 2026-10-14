@@ -37,3 +37,11 @@ No VPN functionality was changed.
 - Windows file version resources keep the upstream copyright and add the fork's.
 - README files rewritten for the fork; THIRD_PARTY_LICENSES.md extended with dependencies that were
   missing from it.
+
+### 2026-10-14: ewokVPN icons
+
+- All AmneziaVPN logos and app icons replaced with the ewokVPN day and night icons
+  (`branding/icons`, generated for every platform by `tools/generate_icons.py`).
+- iOS uses the night icon as the dark-appearance app icon. The tray, notification and
+  quick-settings icons use a new ewok head silhouette.
+- Unused AmneziaVPN logo files (wordmarks and `AmneziaVPN_Full_logo.svg`) removed.

@@ -146,8 +146,8 @@ GNU General Public License as published by the Free Software Foundation, version
 Copyright (C) AmneziaVPN contributors. Modifications copyright (C) ewokVPN contributors.
 
 This project also includes third-party components distributed under their own terms
-(see [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md)). The file
-`client/images/AmneziaVPN_Full_logo.svg` is licensed under CC-BY-SA 4.0 (see the `.license` file next to it).
+(see [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md)). The ewokVPN icons
+are generated from `branding/icons` by `tools/generate_icons.py`.
 
 ## Support the original developers
 

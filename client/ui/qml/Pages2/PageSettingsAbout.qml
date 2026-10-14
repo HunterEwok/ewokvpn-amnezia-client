@@ -67,7 +67,7 @@ PageType {
                         Layout.preferredWidth: 291
                         Layout.preferredHeight: 224
 
-                        source: "qrc:/images/amneziaBigLogo.png"
+                        source: "qrc:/images/ewokBigLogo.png"
                     }
 
                     H2TextType {
