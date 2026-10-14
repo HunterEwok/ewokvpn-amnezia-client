@@ -1,9 +1,9 @@
 # User settings
 *.user
 macOSPackage/
-AmneziaVPN.dmg
-AmneziaVPN.exe
-AmneziaVPN_*.exe
+ewokVPN.dmg
+ewokVPN.exe
+ewokVPN_*.exe
 deploy/build/*
 deploy/build_32/*
 deploy/build_64/*
@@ -51,7 +51,7 @@ client/ui_*.cpp
 client/Makefile*
 client/fastlane/build/
 client/*build-*
-client/AmneziaVPN.xcodeproj
+client/ewokVPN.xcodeproj
 client/Debug-iphonesimulator/
 client/amneziavpn_plugin_import.cpp
 client/amneziavpn_qml_plugin_import.cpp
@@ -75,7 +75,7 @@ CMakeLists.txt.user*
 *.7z
 deploy/AppDir
 deploy/Tools
-deploy/AmneziaVPN*Installer*
+deploy/ewokVPN*Installer*
 
 # MACOS files
 .DS_Store

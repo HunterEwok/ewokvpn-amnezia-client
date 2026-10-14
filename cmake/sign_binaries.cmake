@@ -12,7 +12,7 @@ if(NOT DEFINED CODESIGN_KEYCHAIN)
 endif()
 
 if(WIN32)
-	set(AMNEZIA_PACKAGE_DIR "${CPACK_TEMPORARY_DIRECTORY}/packages/AmneziaVPN/data")
+	set(AMNEZIA_PACKAGE_DIR "${CPACK_TEMPORARY_DIRECTORY}/packages/ewokVPN/data")
     if(SIGNTOOL_SUBJECT_NAME)
         include(${CMAKE_CURRENT_LIST_DIR}/util/signtool.cmake)
         signtool_sign_files("${AMNEZIA_PACKAGE_DIR}/*.exe" "${SIGNTOOL_SUBJECT_NAME}" "${SIGNTOOL_CERT_HAS_UI}")
@@ -34,11 +34,11 @@ if(APPLE)
 
     file(GLOB_RECURSE execs "${bundle}/Contents/MacOS/*")
     set(client_exec ${execs})
-    list(FILTER client_exec INCLUDE REGEX [[AmneziaVPN$]])
+    list(FILTER client_exec INCLUDE REGEX [[ewokVPN$]])
     set(service_exec ${execs})
-    list(FILTER service_exec INCLUDE REGEX [[AmneziaVPN-service$]])
+    list(FILTER service_exec INCLUDE REGEX [[ewokVPN-service$]])
     set(other_execs ${execs})
-    list(FILTER other_execs EXCLUDE REGEX [[AmneziaVPN$|AmneziaVPN-service$]])
+    list(FILTER other_execs EXCLUDE REGEX [[ewokVPN$|ewokVPN-service$]])
 
     list(APPEND files "${frameworks}" "${dylibs}" "${other_execs}" "${service_exec}" "${client_exec}" "${bundle}")
 

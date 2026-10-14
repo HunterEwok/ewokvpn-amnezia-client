@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.25.0 FATAL_ERROR)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(PROJECT AmneziaVPN)
+set(PROJECT ewokVPN)
 if(NOT AMNEZIAVPN_VERSION)
     set(AMNEZIAVPN_VERSION 5.1.0.0 CACHE STRING "Client app version")
 endif()
@@ -16,8 +16,8 @@ set(CMAKE_PROJECT_TOP_LEVEL_INCLUDES
     CACHE STRING "" FORCE)
 
 project(${PROJECT} VERSION ${AMNEZIAVPN_VERSION}
-        DESCRIPTION "AmneziaVPN"
-        HOMEPAGE_URL "https://amnezia.org/"
+        DESCRIPTION "ewokVPN"
+        HOMEPAGE_URL "https://github.com/HunterEwok/ewokvpn-amnezia-client"
 )
 
 option(AMNEZIA_BUILD_TESTS "Build test executables" OFF)
