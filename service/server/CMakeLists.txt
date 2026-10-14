@@ -371,16 +371,17 @@ add_custom_command(TARGET ${PROJECT} POST_BUILD
 )
 
 # prebuilt openvpn carries the rpath of whatever machine baked it; point the
-# build-tree copy at the local conan openssl (install rewrites it to $ORIGIN)
+# build-tree copy at the local conan openssl (install rewrites it to $ORIGIN).
+# One script per config so multi-config generators (Xcode) don't clash.
 if(LINUX)
-    file(GENERATE OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/set_openvpn_rpath.cmake
+    file(GENERATE OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/set_openvpn_rpath_$<CONFIG>.cmake
         CONTENT "file(RPATH_SET FILE \"$<TARGET_FILE_DIR:${PROJECT}>/openvpn\" NEW_RPATH \"$<TARGET_FILE_DIR:OpenSSL::SSL>\")\n"
     )
     add_custom_command(TARGET ${PROJECT} POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/set_openvpn_rpath.cmake
+        COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/set_openvpn_rpath_$<CONFIG>.cmake
     )
 elseif(APPLE)
-    file(GENERATE OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/set_openvpn_rpath.cmake CONTENT
+    file(GENERATE OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/set_openvpn_rpath_$<CONFIG>.cmake CONTENT
 [=[
 set(ovpn "$<TARGET_FILE_DIR:ewokVPN-service>/openvpn")
 set(dir "$<TARGET_FILE_DIR:OpenSSL::SSL>")
@@ -389,7 +390,7 @@ execute_process(COMMAND install_name_tool -add_rpath "${dir}" "${ovpn}")
 ]=]
     )
     add_custom_command(TARGET ${PROJECT} POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/set_openvpn_rpath.cmake
+        COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/set_openvpn_rpath_$<CONFIG>.cmake
     )
 endif()
 
