@@ -1,13 +1,13 @@
 cmake_minimum_required(VERSION 3.25.0 FATAL_ERROR)
 
-set(PROJECT AmneziaVPN-service)
+set(PROJECT ewokVPN-service)
 project(${PROJECT} VERSION ${AMNEZIAVPN_VERSION})
 
 if (APPLE)
     # CMAKE_INSTALL_BINDIR must be called before find_package(Qt6) for
     # Qt to configure prefixes properly
     # FIXME: make Amnezia-service a bundle and remove this hack completely
-    set(CMAKE_INSTALL_BINDIR "AmneziaVPN.app/Contents/MacOS")
+    set(CMAKE_INSTALL_BINDIR "ewokVPN.app/Contents/MacOS")
 endif()
 
 set(CMAKE_CXX_STANDARD 20)
@@ -331,7 +331,7 @@ qt_add_repc_sources(${PROJECT} ${CMAKE_CURRENT_LIST_DIR}/../../ipc/ipc_process_i
 if(APPLE)
     install(DIRECTORY ${CMAKE_SOURCE_DIR}/deploy/data/macos/pf
         DESTINATION ${CMAKE_INSTALL_BINDIR}
-        COMPONENT AmneziaVPN
+        COMPONENT ewokVPN
     )
     add_custom_command(TARGET ${PROJECT} POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E $<IF:$<CONFIG:Debug>,copy_directory,true>
@@ -371,25 +371,26 @@ add_custom_command(TARGET ${PROJECT} POST_BUILD
 )
 
 # prebuilt openvpn carries the rpath of whatever machine baked it; point the
-# build-tree copy at the local conan openssl (install rewrites it to $ORIGIN)
+# build-tree copy at the local conan openssl (install rewrites it to $ORIGIN).
+# One script per config so multi-config generators (Xcode) don't clash.
 if(LINUX)
-    file(GENERATE OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/set_openvpn_rpath.cmake
+    file(GENERATE OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/set_openvpn_rpath_$<CONFIG>.cmake
         CONTENT "file(RPATH_SET FILE \"$<TARGET_FILE_DIR:${PROJECT}>/openvpn\" NEW_RPATH \"$<TARGET_FILE_DIR:OpenSSL::SSL>\")\n"
     )
     add_custom_command(TARGET ${PROJECT} POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/set_openvpn_rpath.cmake
+        COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/set_openvpn_rpath_$<CONFIG>.cmake
     )
 elseif(APPLE)
-    file(GENERATE OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/set_openvpn_rpath.cmake CONTENT
+    file(GENERATE OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/set_openvpn_rpath_$<CONFIG>.cmake CONTENT
 [=[
-set(ovpn "$<TARGET_FILE_DIR:AmneziaVPN-service>/openvpn")
+set(ovpn "$<TARGET_FILE_DIR:ewokVPN-service>/openvpn")
 set(dir "$<TARGET_FILE_DIR:OpenSSL::SSL>")
 execute_process(COMMAND install_name_tool -delete_rpath "${dir}" "${ovpn}" ERROR_QUIET)
 execute_process(COMMAND install_name_tool -add_rpath "${dir}" "${ovpn}")
 ]=]
     )
     add_custom_command(TARGET ${PROJECT} POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/set_openvpn_rpath.cmake
+        COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/set_openvpn_rpath_$<CONFIG>.cmake
     )
 endif()
 
@@ -398,7 +399,7 @@ if(WIN32)
     # to the files so just omit it for it
     install(FILES ${CONAN_EXECS}
         DESTINATION ${CMAKE_INSTALL_BINDIR}
-        COMPONENT AmneziaVPN
+        COMPONENT ewokVPN
     )
 else()
     set(CONAN_EXECS_INSTALL ${CONAN_EXECS})
@@ -407,7 +408,7 @@ else()
     endif()
     install(FILES ${CONAN_EXECS_INSTALL}
         DESTINATION ${CMAKE_INSTALL_BINDIR}
-        COMPONENT AmneziaVPN
+        COMPONENT ewokVPN
         PERMISSIONS
             OWNER_READ OWNER_EXECUTE
             GROUP_READ GROUP_EXECUTE
@@ -416,7 +417,7 @@ else()
 endif()
 install(FILES ${CONAN_BINS}
     DESTINATION ${CMAKE_INSTALL_BINDIR}
-    COMPONENT AmneziaVPN
+    COMPONENT ewokVPN
 )
 
 # install openvpn via the service's dep set to ship its openssl, then
@@ -428,7 +429,7 @@ if(LINUX)
             OWNER_READ OWNER_EXECUTE
             GROUP_READ GROUP_EXECUTE
             WORLD_READ WORLD_EXECUTE
-        COMPONENT AmneziaVPN
+        COMPONENT ewokVPN
     )
     install(CODE "
         set(_ovpn \"\$ENV{DESTDIR}\${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_BINDIR}/openvpn\")
@@ -438,7 +439,7 @@ if(LINUX)
         file(CHMOD \"\${_ovpn}\" PERMISSIONS
             OWNER_READ OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE)
     "
-        COMPONENT AmneziaVPN
+        COMPONENT ewokVPN
     )
 elseif(APPLE)
     install(CODE "
@@ -446,7 +447,7 @@ elseif(APPLE)
         execute_process(COMMAND install_name_tool -delete_rpath \"$<TARGET_FILE_DIR:OpenSSL::SSL>\" \"\${_ovpn}\" ERROR_QUIET)
         execute_process(COMMAND install_name_tool -add_rpath \"@executable_path/../Frameworks\" \"\${_ovpn}\")
     "
-        COMPONENT AmneziaVPN
+        COMPONENT ewokVPN
     )
 endif()
 
@@ -460,7 +461,7 @@ if (WIN32)
     )
     install(DIRECTORY "${TAP_WINDOWS6_BIN}/"
         DESTINATION "${CMAKE_INSTALL_BINDIR}/tap"
-        COMPONENT AmneziaVPN
+        COMPONENT ewokVPN
     )
 
     find_package(win-split-tunnel REQUIRED)
@@ -471,7 +472,7 @@ if (WIN32)
     )
     install(DIRECTORY "${WIN_SPLIT_TUNNEL_BIN}/"
         DESTINATION ${CMAKE_INSTALL_BINDIR}
-        COMPONENT AmneziaVPN
+        COMPONENT ewokVPN
     )
 endif()
 
@@ -479,7 +480,7 @@ endif()
 install(TARGETS ${PROJECT}
     DESTINATION ${CMAKE_INSTALL_BINDIR}
     RUNTIME_DEPENDENCY_SET service_deps
-    COMPONENT AmneziaVPN
+    COMPONENT ewokVPN
 )
 
 if(APPLE)
@@ -502,7 +503,7 @@ install(RUNTIME_DEPENDENCY_SET service_deps
         [[^/lib.*]]
         [[^/usr/lib.*]]
     DIRECTORIES ${CONAN_RUNTIME_LIB_DIRS}
-    COMPONENT AmneziaVPN
+    COMPONENT ewokVPN
     DESTINATION "${RUNTIME_DEPS_DIR}"
 )
 
@@ -512,5 +513,5 @@ qt_generate_deploy_app_script(
     NO_UNSUPPORTED_PLATFORM_ERROR
 )
 install(SCRIPT ${QT_DEPLOY_SCRIPT}
-    COMPONENT AmneziaVPN
+    COMPONENT ewokVPN
 )

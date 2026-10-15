@@ -201,7 +201,7 @@ PageType {
 
             horizontalAlignment: Text.AlignHCenter
 
-            text: qsTr("All data you enter will remain strictly confidential and will not be shared or disclosed to the Amnezia or any third parties")
+            text: qsTr("All data you enter will remain strictly confidential and will not be shared or disclosed to ewokVPN or any third parties")
         }
     }
 }

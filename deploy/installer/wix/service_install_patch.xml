@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CPackWiXPatch>
-    <CPackWiXFragment Id="CM_CP_AmneziaVPN.AmneziaVPN_service.exe">
+    <CPackWiXFragment Id="CM_CP_ewokVPN.ewokVPN_service.exe">
         <ServiceInstall
                 Id="AmneziaServiceInstall"
-                Name="AmneziaVPN-service"
-                DisplayName="AmneziaVPN Service"
-                Description="Service for AmneziaVPN"
+                Name="ewokVPN-service"
+                DisplayName="ewokVPN Service"
+                Description="Service for ewokVPN"
                 Start="auto"
                 Type="ownProcess"
                 ErrorControl="normal"
@@ -15,7 +15,7 @@
         </ServiceInstall>
         <ServiceControl
                 Id="AmneziaServiceControl"
-                Name="AmneziaVPN-service"
+                Name="ewokVPN-service"
                 Start="install"
                 Stop="both"
                 Remove="uninstall"

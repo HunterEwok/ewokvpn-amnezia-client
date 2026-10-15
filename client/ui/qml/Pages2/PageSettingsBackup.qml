@@ -63,7 +63,7 @@ PageType {
                 Layout.bottomMargin: 16
 
                 text: qsTr("The backup will contain your passwords and private keys for all servers added " +
-                                 "to AmneziaVPN. Keep this information in a secure place.")
+                                 "to ewokVPN. Keep this information in a secure place.")
             }
         }
     }
@@ -90,11 +90,11 @@ PageType {
             onClicked: {
                 var fileName = ""
                 if (GC.isMobile()) {
-                    fileName = "AmneziaVPN.backup"
+                    fileName = "ewokVPN.backup"
                 } else {
                     fileName = SystemController.getFileName(qsTr("Save backup file"),
                                                             qsTr("Backup files (*.backup)"),
-                                                            StandardPaths.standardLocations(StandardPaths.DocumentsLocation) + "/AmneziaVPN",
+                                                            StandardPaths.standardLocations(StandardPaths.DocumentsLocation) + "/ewokVPN",
                                                             true,
                                                             ".backup")
                 }

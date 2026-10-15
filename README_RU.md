@@ -1,52 +1,38 @@
-# Amnezia VPN
+# ewokVPN
 
-### _Лучший клиент для создания VPN на собственном сервере_
+### [English](README.md) | Русский
 
-[![Build Status](https://github.com/amnezia-vpn/amnezia-client/actions/workflows/deploy.yml/badge.svg?branch=dev)](https://github.com/amnezia-vpn/amnezia-client/actions/workflows/deploy.yml?query=branch:dev)
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/amnezia-vpn/amnezia-client)
+ewokVPN — VPN-клиент, который умеет разворачивать VPN на вашем собственном сервере. Это форк
+[AmneziaVPN](https://github.com/amnezia-vpn/amnezia-client), распространяемый под той же лицензией
+[GNU General Public License v3.0](LICENSE).
 
-### [English](https://github.com/amnezia-vpn/amnezia-client/blob/dev/README.md) | Русский
-[AmneziaVPN](https://amnezia.org?utm_source=github&utm_campaign=amnezia_website-readme-ru) — это open source VPN-клиент, ключевая особенность которого заключается в возможности развернуть собственный VPN на вашем сервере.
+> [!NOTE]
+> ewokVPN — независимый проект. Он не связан с командой AmneziaVPN, не одобрен и не поддерживается ею.
+> «Amnezia», «AmneziaVPN» и логотип Amnezia принадлежат их владельцам.
+> О проблемах ewokVPN сообщайте в этом репозитории, а не в каналы поддержки AmneziaVPN.
 
-[![Image](https://github.com/amnezia-vpn/amnezia-client/blob/dev/metadata/img-readme/uipic4.png)](https://amnezia.org)
+## Происхождение и изменения
 
-### [Сайт](https://amnezia.org?utm_source=github&utm_campaign=amnezia_website-readme-ru) | [Зеркало сайта](https://storage.googleapis.com/amnezia/amnezia.org?utm_source=github&utm_campaign=amnezia_website-readme-ru-mirror) | [Документация](https://docs.amnezia.org) | [Решение проблем](https://docs.amnezia.org/troubleshooting)
+- Исходный проект: https://github.com/amnezia-vpn/amnezia-client
+- Форк сделан от ветки `dev` исходного проекта, коммит `705a373` (октябрь 2026).
+- Полный список изменений форка — в [NOTICE.md](NOTICE.md) и в истории git этого репозитория.
 
-> [!TIP]
-> Если [сайт Amnezia](https://amnezia.org?utm_source=github&utm_campaign=amnezia_website-readme-ru) заблокирован в вашем регионе, вы можете воспользоваться [ссылкой на зеркало](https://storage.googleapis.com/amnezia/amnezia.org?utm_source=github&utm_campaign=amnezia_website-readme-ru-mirror).
+## Исходный код
 
-<a href="https://storage.googleapis.com/amnezia/amnezia.org?m-path=/ru/downloads&utm_source=github&utm_campaign=amnezia_button-readme-ru-mirror"><img src="https://github.com/amnezia-vpn/amnezia-client/blob/dev/metadata/img-readme/download-website-ru.svg" width="150" style="max-width: 100%; margin-right: 10px"></a>
-
-
-[Все релизы](https://github.com/amnezia-vpn/amnezia-client/releases)
-
-<br/>
-
-<a href="https://www.testiny.io"><img src="https://github.com/amnezia-vpn/amnezia-client/blob/dev/metadata/img-readme/testiny.png" height="28px"></a>
+Полный исходный код каждого релиза ewokVPN опубликован в этом репозитории:
+https://github.com/HunterEwok/ewokvpn-amnezia-client. Каждый релиз собирается из git-тега с тем же названием.
 
 ## Особенности
 
-- Простой в использовании — введите IP-адрес, SSH-логин и пароль, и Amnezia автоматически установит VPN-контейнеры Docker на ваш сервер и подключится к VPN.
+- Простой в использовании — введите IP-адрес, SSH-логин и пароль, и ewokVPN автоматически установит VPN-контейнеры Docker на ваш сервер и подключится к VPN.
 - Классические VPN-протоколы: OpenVPN, WireGuard и IKEv2.
 - Протоколы с маскировкой трафика (обфускацией): OpenVPN с плагином [Cloak](https://github.com/cbeuw/Cloak), Shadowsocks (OpenVPN over Shadowsocks), [AmneziaWG](https://docs.amnezia.org/documentation/amnezia-wg/) и XRay.
 - Поддержка Split Tunneling — добавляйте любые сайты или приложения в список, чтобы включить VPN только для них.
-- Поддерживает платформы: Windows, macOS, Linux, Android, iOS.
-- Поддержка конфигурации протокола AmneziaWG на [бета-прошивке Keenetic](https://docs.keenetic.com/ua/air/kn-1611/en/6319-latest-development-release.html#UUID-186c4108-5afd-c10b-f38a-cdff6c17fab3_section-idm33192196168192-improved).
-
-## Ссылки
-
-- [https://amnezia.org](https://amnezia.org/?utm_source=github&utm_campaign=amnezia_website-read) - Веб-сайт проекта | [Альтернативная ссылка (зеркало)](https://storage.googleapis.com/amnezia/amnezia.org?utm_source=github&utm_campaign=amnezia_website-read)
-- [https://docs.amnezia.org](https://docs.amnezia.org/?utm_source=github&utm_campaign=amnezia_website-read) - Документация | [Альтернативная ссылка (зеркало)](https://storage.googleapis.com/amnezia/docs?utm_source=github&utm_campaign=amnezia_website-read)
-- [https://www.reddit.com/r/AmneziaVPN](https://www.reddit.com/r/AmneziaVPN) - Reddit  
-- [https://telegram.me/amnezia_vpn_en](https://telegram.me/amnezia_vpn_en) - Канал поддержки в Telegram (Английский)
-- [https://telegram.me/amnezia_vpn_ir](https://telegram.me/amnezia_vpn_ir) - Канал поддержки в Telegram (Фарси)
-- [https://telegram.me/amnezia_vpn_mm](https://telegram.me/amnezia_vpn_mm) - Канал поддержки в Telegram (Мьянма) 
-- [https://telegram.me/amnezia_vpn](https://telegram.me/amnezia_vpn) - Канал поддержки в Telegram  (Русский)
-- [Оформите Premium на 6 или 12 месяцев](https://storage.googleapis.com/amnezia/pay?utm_source=github&utm_campaign=ampay-read)
+- Платформы: Windows, macOS, Linux, Android, iOS.
 
 ## Технологии
 
-AmneziaVPN использует несколько проектов с открытым исходным кодом:
+ewokVPN, как и AmneziaVPN, использует проекты с открытым исходным кодом:
 
 - [OpenSSL](https://www.openssl.org/)
 - [OpenVPN](https://openvpn.net/)
@@ -55,17 +41,11 @@ AmneziaVPN использует несколько проектов с откр�
 - [WireGuard](https://www.wireguard.com/)
 - [Xray-core](https://xtls.github.io/en/)
 - [Conan](https://conan.io/)
-- и другие...
+- и другие, см. [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md)
 
-## Помощь с переводами
+## Переводы
 
-Загрузите самые актуальные файлы перевода.
-
-Перейдите на [вкладку "Actions"](https://github.com/amnezia-vpn/amnezia-client/actions?query=is%3Asuccess+branch%3Adev), нажмите на первую строку. Затем прокрутите вниз до раздела "Artifacts" и скачайте "AmneziaVPN_translations".
-
-Распакуйте этот файл. Каждый файл с расширением *.ts содержит строки для соответствующего языка.
-
-Переведите или исправьте строки в одном или нескольких файлах *.ts и загрузите их обратно в этот репозиторий в папку ``client/translations``. Это можно сделать через веб-интерфейс или любым другим знакомым вам способом.
+Файлы переводов лежат в папке `client/translations`. Каждый файл `*.ts` содержит строки для одного языка.
 
 ## Проверка исходного кода
 
@@ -149,7 +129,7 @@ deploy/build.bat --installer all
   - `Visual Studio Code` with `Qt Extension Pack`
   - и так далее
 
-* Для использования `Xcode` нужно сконфигурировать проект с помощью `cmake`. Самый простой способ это сделать - использовать `Qt Creator` для конфигурации. Затем, нужно открыть файл `AmneziaVPN.xcodeproj` из папки сборки с помощью `Xcode`. Учтите, что никакие файлы фактически не сохраняются - они сохраняются в директории сборки. Если требуется, скопируйте файлы вручную
+* Для использования `Xcode` нужно сконфигурировать проект с помощью `cmake`. Самый простой способ это сделать - использовать `Qt Creator` для конфигурации. Затем, нужно открыть файл `ewokVPN.xcodeproj` из папки сборки с помощью `Xcode`. Учтите, что никакие файлы фактически не сохраняются - они сохраняются в директории сборки. Если требуется, скопируйте файлы вручную
 
 * `Android studio` может быть использована подобным вышеуказанному способу - нужно использовать `cmake` вручную или через `Qt Creator` для конфигурации. Далее, откройте `<build-dir>/client/android-build` в `Android studio`. Не забудьте скопировать изменённые файлы в папку с исходным кодом - все файлы, изменённые в IDE, сохраняются фактически в папке сборки.
 
@@ -162,19 +142,16 @@ deploy/build.bat --installer all
 
 ## Лицензия
 
-GPL v3.0
+ewokVPN — свободное программное обеспечение: вы можете распространять и изменять его на условиях
+GNU General Public License версии 3, опубликованной Free Software Foundation (см. [LICENSE](LICENSE)).
 
-## Донаты
+Copyright (C) AmneziaVPN contributors. Изменения: Copyright (C) ewokVPN contributors.
 
-Patreon: [https://www.patreon.com/amneziavpn](https://www.patreon.com/amneziavpn)
+Проект также включает сторонние компоненты под их собственными лицензиями
+(см. [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md)). Иконки ewokVPN
+собираются из `branding/icons` скриптом `tools/generate_icons.py`.
 
-Bitcoin: bc1qmhtgcf9637rl3kqyy22r2a8wa8laka4t9rx2mf <br>
-USDT BEP20: 0x6abD576765a826f87D1D95183438f9408C901bE4 <br>
-USDT TRC20: TELAitazF1MZGmiNjTcnxDjEiH5oe7LC9d <br>
-XMR: 48spms39jt1L2L5vyw2RQW6CXD6odUd4jFu19GZcDyKKQV9U88wsJVjSbL4CfRys37jVMdoaWVPSvezCQPhHXUW5UKLqUp3 <br> 
-TON: UQDpU1CyKRmg7L8mNScKk9FRc2SlESuI7N-Hby4nX-CcVmns
+## Поддержать авторов оригинала
 
-## Благодарности
-
-Этот проект тестируется с помощью BrowserStack.
-Мы выражаем благодарность [BrowserStack](https://www.browserstack.com) за поддержку нашего проекта.
+ewokVPN построен на работе команды AmneziaVPN. Поддержать их можно через
+[исходный проект](https://github.com/amnezia-vpn/amnezia-client#donate).

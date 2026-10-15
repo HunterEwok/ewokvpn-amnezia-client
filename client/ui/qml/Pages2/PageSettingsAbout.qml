@@ -18,7 +18,7 @@ PageType {
         target: UpdateController
 
         function onUpdateNotFound() {
-            PageController.showNotificationMessage(qsTr("You have the latest version of AmneziaVPN"))
+            PageController.showNotificationMessage(qsTr("You have the latest version of ewokVPN"))
         }
 
         function onUpdateCheckFailed() {
@@ -67,7 +67,7 @@ PageType {
                         Layout.preferredWidth: 291
                         Layout.preferredHeight: 224
 
-                        source: "qrc:/images/amneziaBigLogo.png"
+                        source: "qrc:/images/ewokBigLogo.png"
                     }
 
                     H2TextType {
@@ -75,7 +75,7 @@ PageType {
                         Layout.topMargin: 12
 
                         horizontalAlignment: Text.AlignHCenter
-                        text: qsTr("Support Amnezia")
+                        text: qsTr("Based on AmneziaVPN")
                     }
 
                     BodyTextType {
@@ -83,7 +83,7 @@ PageType {
 
                         horizontalAlignment: Text.AlignHCenter
                         color: AmneziaStyle.color.textSecondary
-                        text: qsTr("Amnezia is a free and open-source application. You can support the developers if you like it.")
+                        text: qsTr("ewokVPN is a fork of AmneziaVPN, a free and open-source application licensed under GPL-3.0. You can support the AmneziaVPN developers if you like it.")
                     }
                 }
 
@@ -195,6 +195,7 @@ PageType {
         telegramGroup,
         mail,
         github,
+        upstream,
         website
     ]
 
@@ -227,7 +228,18 @@ PageType {
         readonly property string description: qsTr("Discover the source code")
         readonly property string imageSource: "qrc:/images/controls/github.svg"
         readonly property var handler: function() {
-            Qt.openUrlExternally(qsTr("https://github.com/amnezia-vpn/amnezia-client"))
+            Qt.openUrlExternally(qsTr("https://github.com/HunterEwok/ewokvpn-amnezia-client"))
+        }
+    }
+
+    QtObject {
+        id: upstream
+
+        readonly property string title: qsTr("AmneziaVPN")
+        readonly property string description: qsTr("Original project this app is based on")
+        readonly property string imageSource: "qrc:/images/controls/github.svg"
+        readonly property var handler: function() {
+            Qt.openUrlExternally("https://github.com/amnezia-vpn/amnezia-client")
         }
     }
 

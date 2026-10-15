@@ -477,8 +477,8 @@ Already installed containers were found on the server. All installed containers 
     <message>
         <location filename="../ui/utils/notificationHandler.cpp" line="57"/>
         <location filename="../ui/utils/notificationHandler.cpp" line="64"/>
-        <source>AmneziaVPN</source>
-        <translation>AmneziaVPN</translation>
+        <source>ewokVPN</source>
+        <translation>ewokVPN</translation>
     </message>
     <message>
         <location filename="../ui/utils/notificationHandler.cpp" line="58"/>
@@ -492,8 +492,8 @@ Already installed containers were found on the server. All installed containers 
     </message>
     <message>
         <location filename="../ui/utils/notificationHandler.cpp" line="88"/>
-        <source>AmneziaVPN notification</source>
-        <translation>اخطار AmneziaVPN</translation>
+        <source>ewokVPN notification</source>
+        <translation>اخطار ewokVPN</translation>
     </message>
     <message>
         <location filename="../ui/utils/notificationHandler.cpp" line="89"/>
@@ -3380,7 +3380,7 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettings.qml" line="178"/>
-        <source>About AmneziaVPN</source>
+        <source>About ewokVPN</source>
         <translation>درباره Amnezia</translation>
     </message>
     <message>
@@ -3393,8 +3393,8 @@ Create one from the current settings.</source>
     <name>PageSettingsAbout</name>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAbout.qml" line="21"/>
-        <source>You have the latest version of AmneziaVPN</source>
-        <translation>آخرین نسخه AmneziaVPN را دارید</translation>
+        <source>You have the latest version of ewokVPN</source>
+        <translation>آخرین نسخه ewokVPN را دارید</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAbout.qml" line="25"/>
@@ -3403,13 +3403,13 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAbout.qml" line="78"/>
-        <source>Support Amnezia</source>
-        <translation>پشتیبانی از Amnezia</translation>
+        <source>Based on AmneziaVPN</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAbout.qml" line="86"/>
-        <source>Amnezia is a free and open-source application. You can support the developers if you like it.</source>
-        <translation>Amnezia یک برنامه رایگان و متن باز است. اگر دوست دارید می توانید از توسعه دهندگان حمایت کنید.</translation>
+        <source>ewokVPN is a fork of AmneziaVPN, a free and open-source application licensed under GPL-3.0. You can support the AmneziaVPN developers if you like it.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAbout.qml" line="98"/>
@@ -3483,8 +3483,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAbout.qml" line="230"/>
-        <source>https://github.com/amnezia-vpn/amnezia-client</source>
-        <translation>https://github.com/amnezia-vpn/amnezia-client</translation>
+        <source>https://github.com/HunterEwok/ewokvpn-amnezia-client</source>
+        <translation>https://github.com/HunterEwok/ewokvpn-amnezia-client</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsAbout.qml" line="237"/>
@@ -3675,8 +3675,8 @@ Create one from the current settings.</source>
     <name>PageSettingsApiNativeConfigs</name>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApiNativeConfigs.qml" line="21"/>
-        <source>Save AmneziaVPN config</source>
-        <translation>ذخیره تنظیمات AmneziaVPN</translation>
+        <source>Save ewokVPN config</source>
+        <translation>ذخیره تنظیمات ewokVPN</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApiNativeConfigs.qml" line="183"/>
@@ -3911,8 +3911,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApiSubscriptionKey.qml" line="113"/>
-        <source>Save AmneziaVPN config</source>
-        <translation>ذخیره تنظیمات AmneziaVPN</translation>
+        <source>Save ewokVPN config</source>
+        <translation>ذخیره تنظیمات ewokVPN</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApiSubscriptionKey.qml" line="114"/>
@@ -3931,8 +3931,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApiSubscriptionKey.qml" line="173"/>
-        <source>To read the QR code in the Amnezia app, tap + in the main menu → &apos;QR code&apos;</source>
-        <translation>برای خواندن کد QR در برنامه Amnezia، در منوی اصلی + را بزنید → «کد QR»</translation>
+        <source>To read the QR code in the ewokVPN app, tap + in the main menu → &apos;QR code&apos;</source>
+        <translation>برای خواندن کد QR در برنامه ewokVPN، در منوی اصلی + را بزنید → «کد QR»</translation>
     </message>
 </context>
 <context>
@@ -4145,7 +4145,7 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="274"/>
-        <source>All settings will be reset to default. All installed AmneziaVPN services will still remain on the server.</source>
+        <source>All settings will be reset to default. All installed ewokVPN services will still remain on the server.</source>
         <translation>تمام تنظیمات به حالت پیش‎فرض ریست می‎شوند. تمام سرویس‎های Amnezia بر روی سرور باقی می‎مانند.</translation>
     </message>
     <message>
@@ -4183,8 +4183,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsBackup.qml" line="65"/>
-        <source>The backup will contain your passwords and private keys for all servers added to AmneziaVPN. Keep this information in a secure place.</source>
-        <translation>پشتیبان حاوی رمزهای عبور و کلیدهای خصوصی شما برای تمام سرورهای اضافه شده به AmneziaVPN خواهد بود. این اطلاعات را در یک مکان امن نگه دارید</translation>
+        <source>The backup will contain your passwords and private keys for all servers added to ewokVPN. Keep this information in a secure place.</source>
+        <translation>پشتیبان حاوی رمزهای عبور و کلیدهای خصوصی شما برای تمام سرورهای اضافه شده به ewokVPN خواهد بود. این اطلاعات را در یک مکان امن نگه دارید</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsBackup.qml" line="88"/>
@@ -4657,7 +4657,7 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSettingsServerData.qml" line="150"/>
-        <source>All installed AmneziaVPN services will still remain on the server.</source>
+        <source>All installed ewokVPN services will still remain on the server.</source>
         <translation>تمام سرویس‎های نصب‎شده Amnezia همچنان بر روی سرور باقی خواهند ماند.</translation>
     </message>
     <message>
@@ -5195,8 +5195,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSetupWizardConfigSource.qml" line="306"/>
-        <source>Configure Amnezia VPN on your own server</source>
-        <translation>پیکربندی VPN Amnezia بر روی سرور خودتان</translation>
+        <source>Configure ewokVPN on your own server</source>
+        <translation>پیکربندی VPN ewokVPN بر روی سرور خودتان</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSetupWizardConfigSource.qml" line="318"/>
@@ -5263,8 +5263,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSetupWizardCredentials.qml" line="204"/>
-        <source>All data you enter will remain strictly confidential and will not be shared or disclosed to the Amnezia or any third parties</source>
-        <translation>تمام داده‎هایی که شما وارد می‎کنید به شدت محرمانه‎ است و با Amnezia یا هر شخص ثالث دیگری به اشتراک گذاشته نمی‎شود</translation>
+        <source>All data you enter will remain strictly confidential and will not be shared or disclosed to ewokVPN or any third parties</source>
+        <translation>تمام داده‎هایی که شما وارد می‎کنید به شدت محرمانه‎ است و با ewokVPN یا هر شخص ثالث دیگری به اشتراک گذاشته نمی‎شود</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSetupWizardCredentials.qml" line="132"/>
@@ -5370,13 +5370,13 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSetupWizardInstalling.qml" line="63"/>
-        <source>Amnezia has detected that your server is currently </source>
-        <translation>Amnezia has detected that your server is currently </translation>
+        <source>ewokVPN has detected that your server is currently </source>
+        <translation>ewokVPN has detected that your server is currently </translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSetupWizardInstalling.qml" line="64"/>
-        <source>busy installing other software. Amnezia installation </source>
-        <translation>مشغول نصب نرم افزارهای دیگر نصب Amnezia </translation>
+        <source>busy installing other software. ewokVPN installation </source>
+        <translation>مشغول نصب نرم افزارهای دیگر نصب ewokVPN </translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageSetupWizardInstalling.qml" line="65"/>
@@ -5577,8 +5577,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageShare.qml" line="51"/>
-        <source>Save AmneziaVPN config</source>
-        <translation>ذخیره تنظیمات AmneziaVPN</translation>
+        <source>Save ewokVPN config</source>
+        <translation>ذخیره تنظیمات ewokVPN</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageShare.qml" line="58"/>
@@ -5612,8 +5612,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageShare.qml" line="108"/>
-        <source>For the AmneziaVPN app</source>
-        <translation>برای نرم‎افزار AmneziaVPN</translation>
+        <source>For the ewokVPN app</source>
+        <translation>برای نرم‎افزار ewokVPN</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageShare.qml" line="113"/>
@@ -5775,8 +5775,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageShareConnection.qml" line="30"/>
-        <source>Save AmneziaVPN config</source>
-        <translation>ذخیره تنظیمات AmneziaVPN</translation>
+        <source>Save ewokVPN config</source>
+        <translation>ذخیره تنظیمات ewokVPN</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageShareConnection.qml" line="126"/>
@@ -5795,8 +5795,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageShareConnection.qml" line="199"/>
-        <source>To read the QR code in the Amnezia app, tap + in the main menu → &apos;QR code&apos;</source>
-        <translation>برای خواندن کد QR در برنامه Amnezia، در منوی اصلی + را بزنید → «کد QR»</translation>
+        <source>To read the QR code in the ewokVPN app, tap + in the main menu → &apos;QR code&apos;</source>
+        <translation>برای خواندن کد QR در برنامه ewokVPN، در منوی اصلی + را بزنید → «کد QR»</translation>
     </message>
     <message>
         <location filename="../ui/qml/Pages2/PageShareConnection.qml" line="214"/>
@@ -6216,8 +6216,8 @@ Create one from the current settings.</source>
     </message>
     <message>
         <location filename="../core/utils/errorStrings.cpp" line="98"/>
-        <source>Amnezia helper service error</source>
-        <translation>Amnezia helper service error</translation>
+        <source>ewokVPN helper service error</source>
+        <translation>ewokVPN helper service error</translation>
     </message>
     <message>
         <location filename="../core/utils/errorStrings.cpp" line="99"/>
@@ -6490,14 +6490,14 @@ Create one from the current settings.</source>
         <source>OpenVPN is one of the most popular and reliable VPN protocols. It uses SSL/TLS encryption, supports a wide variety of devices and operating systems, and is continuously improved by the community due to its open-source nature. It provides a good balance between speed and security but is easily recognized by DPI systems, making it susceptible to blocking.
 
 Features:
-* Available on all AmneziaVPN platforms
+* Available on all ewokVPN platforms
 * Normal battery consumption on mobile devices
 * Flexible customization for various devices and OS
 * Operates over both TCP and UDP protocols</source>
         <translation>OpenVPN یکی از محبوب‌ترین و قابل‌اعتمادترین پروتکل‌های VPN است. از رمزنگاری SSL/TLS استفاده می‌کند، از طیف گسترده‌ای از دستگاه‌ها و سیستم‌عامل‌ها پشتیبانی می‌کند و به دلیل متن‌باز بودن، به‌طور مستمر توسط جامعه کاربران بهبود می‌یابد. تعادل خوبی میان سرعت و امنیت برقرار می‌کند، اما سامانه‌های DPI به‌راحتی آن را تشخیص می‌دهند و در نتیجه در برابر مسدودسازی آسیب‌پذیر است.
 
 ویژگی‌ها:
-* در دسترس در همه پلتفرم‌های AmneziaVPN
+* در دسترس در همه پلتفرم‌های ewokVPN
 * مصرف باتری معمولی در دستگاه‌های همراه
 * شخصی‌سازی انعطاف‌پذیر برای دستگاه‌ها و سیستم‌عامل‌های مختلف
 * کار با هر دو پروتکل TCP و UDP</translation>
@@ -6507,7 +6507,7 @@ Features:
         <source>WireGuard is a modern, streamlined VPN protocol offering stable connectivity and excellent performance across all devices. It uses fixed encryption settings, delivering lower latency and higher data transfer speeds compared to OpenVPN. However, WireGuard is easily identifiable by DPI systems due to its distinctive packet signatures, making it susceptible to blocking.
 
 Features:
-* Available on all AmneziaVPN platforms
+* Available on all ewokVPN platforms
 * Low power consumption on mobile devices
 * Minimal configuration required
 * Easily detected by DPI systems (susceptible to blocking)
@@ -6515,7 +6515,7 @@ Features:
         <translation>WireGuard یک پروتکل VPN مدرن و ساده است که ارتباط پایدار و عملکرد عالی را در همه دستگاه‌ها ارائه می‌دهد. از تنظیمات رمزنگاری ثابت استفاده می‌کند و در مقایسه با OpenVPN تأخیر کمتر و سرعت انتقال داده بالاتری دارد. با این حال، WireGuard به دلیل امضاهای متمایز بسته‌هایش به‌راحتی توسط سامانه‌های DPI شناسایی می‌شود و در برابر مسدودسازی آسیب‌پذیر است.
 
 ویژگی‌ها:
-* در دسترس در همه پلتفرم‌های AmneziaVPN
+* در دسترس در همه پلتفرم‌های ewokVPN
 * مصرف انرژی کم در دستگاه‌های همراه
 * نیاز به حداقل تنظیمات
 * شناسایی آسان توسط سامانه‌های DPI (آسیب‌پذیر در برابر مسدودسازی)
@@ -6528,7 +6528,7 @@ Features:
 AmneziaWG is an excellent choice for those seeking a fast, stealthy VPN connection.
 
 Features:
-* Available on all AmneziaVPN platforms
+* Available on all ewokVPN platforms
 * Low battery consumption on mobile devices
 * Minimal settings required
 * Undetectable by traffic analysis systems (DPI)
@@ -6538,7 +6538,7 @@ Features:
 AmneziaWG گزینه‌ای بسیار مناسب برای کسانی است که به دنبال اتصال VPN سریع و پنهان هستند.
 
 ویژگی‌ها:
-* در دسترس در همه پلتفرم‌های AmneziaVPN
+* در دسترس در همه پلتفرم‌های ewokVPN
 * مصرف باتری کم در دستگاه‌های همراه
 * نیاز به حداقل تنظیمات
 * غیرقابل شناسایی توسط سامانه‌های تحلیل ترافیک (DPI)
@@ -6570,7 +6570,7 @@ Features:
         <source>IKEv2, combined with IPSec encryption, is a modern and reliable VPN protocol. It reconnects quickly when switching networks or devices, making it ideal for dynamic network environments. While it provides good security and speed, it&apos;s easily recognized by DPI systems and susceptible to blocking.
 
 Features:
-* Available in AmneziaVPN only on Windows
+* Available in ewokVPN only on Windows
 * Low battery consumption on mobile devices
 * Minimal configuration required
 * Detectable by DPI analysis systems(easily blocked)
@@ -6578,7 +6578,7 @@ Features:
         <translation>IKEv2 در ترکیب با رمزنگاری IPSec یک پروتکل مدرن و قابل‌اعتماد VPN است. هنگام تغییر شبکه یا دستگاه به‌سرعت اتصال را برقرار می‌کند و از این رو برای محیط‌های شبکه متغیر بسیار مناسب است. با آنکه امنیت و سرعت خوبی ارائه می‌دهد، سامانه‌های DPI به‌راحتی آن را تشخیص می‌دهند و در برابر مسدودسازی آسیب‌پذیر است.
 
 ویژگی‌ها:
-* در AmneziaVPN تنها روی Windows در دسترس است
+* در ewokVPN تنها روی Windows در دسترس است
 * مصرف باتری کم در دستگاه‌های همراه
 * نیاز به حداقل تنظیمات
 * قابل شناسایی توسط سامانه‌های تحلیل DPI (به‌راحتی مسدود می‌شود)
@@ -6638,7 +6638,7 @@ Features:
     </message>
     <message>
         <location filename="../core/utils/containers/containerUtils.cpp" line="189"/>
-        <source>After installation, Amnezia will create a
+        <source>After installation, ewokVPN will create a
 
  file storage on your server. You will be able to access it using
  FileZilla or other SFTP clients, as well as mount the disk on your device to access
@@ -6646,7 +6646,7 @@ Features:
 
 For more detailed information, you can
  find it in the support section under &quot;Create SFTP file storage.&quot; </source>
-        <translation>پس از نصب، Amnezia یک ایجاد خواهد کرد
+        <translation>پس از نصب، ewokVPN یک ایجاد خواهد کرد
 
  ذخیره سازی فایل در سرور شما. شما قادر خواهید بود با استفاده از آن دسترسی داشته باشید
  FileZilla یا سایر کلاینت های SFTP، و همچنین دیسک را برای دسترسی روی دستگاه خود نصب کنید

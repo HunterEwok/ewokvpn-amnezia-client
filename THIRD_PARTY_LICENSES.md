@@ -147,3 +147,114 @@ Each component is distributed under its own license as linked below.
 - Source: https://github.com/OpenVPN/tap-windows6
 - License: tap-windows6 license
 - License Text: https://github.com/OpenVPN/tap-windows6/blob/master/COPYING
+
+---
+
+## Components added to this list by the ewokVPN fork
+
+The entries below are dependencies that the build pulls in (`conanfile.py`, `recipes/`) but that were not listed above.
+Licenses were checked against the upstream repositories on 2026-10-14.
+
+---
+
+## Qt
+
+- Source: https://www.qt.io/download-open-source
+- License: GNU Lesser General Public License v3.0 (LGPL-3.0) / GPL-3.0 (open-source edition)
+- License Text: https://doc.qt.io/qt-6/licensing.html
+
+---
+
+## OpenVPN
+
+- Source: https://github.com/OpenVPN/openvpn
+- License: GNU General Public License v2.0 with an OpenSSL linking exception
+- License Text: https://github.com/OpenVPN/openvpn/blob/master/COPYING
+
+---
+
+## openvpn-pt-android
+
+- Source: https://github.com/amnezia-vpn/openvpn-pt-android
+- License: GNU Affero General Public License v3.0 (AGPL-3.0)
+- License Text: https://github.com/amnezia-vpn/openvpn-pt-android/blob/master/LICENSE
+
+---
+
+## AmneziaWG Windows (embeddable WireGuard tunnel library)
+
+- Source: https://github.com/amnezia-vpn/amneziawg-windows
+- License: MIT License
+- License Text: https://github.com/amnezia-vpn/amneziawg-windows/blob/master/README.md#license
+
+---
+
+## AmneziaWG Android
+
+- Source: https://github.com/amnezia-vpn/amneziawg-android
+- License: Apache License 2.0
+- License Text: https://github.com/amnezia-vpn/amneziawg-android/blob/master/COPYING
+
+---
+
+## amnezia-xray-bindings
+
+- Source: https://github.com/amnezia-vpn/amnezia-xray-bindings
+- License: GNU General Public License v3.0 (GPL-3.0)
+- License Text: https://github.com/amnezia-vpn/amnezia-xray-bindings/blob/main/LICENSE
+
+---
+
+## amnezia-libxray
+
+- Source: https://github.com/amnezia-vpn/amnezia-libxray
+- License: MIT License
+- License Text: https://github.com/amnezia-vpn/amnezia-libxray/blob/main/LICENSE
+
+---
+
+## hev-socks5-tunnel
+
+- Source: https://github.com/heiher/hev-socks5-tunnel
+- License: MIT License
+- License Text: https://github.com/heiher/hev-socks5-tunnel/blob/main/LICENSE
+
+---
+
+## v2ray-rules-dat (geoip.dat, geosite.dat)
+
+- Source: https://github.com/Loyalsoldier/v2ray-rules-dat
+- License: GNU General Public License v3.0 (GPL-3.0)
+- License Text: https://github.com/Loyalsoldier/v2ray-rules-dat/blob/master/LICENSE
+
+---
+
+## libcap-ng
+
+- Source: https://github.com/stevegrubb/libcap-ng
+- License: GNU Lesser General Public License v2.1 (library), GPL-2.0 (utilities)
+- License Text: https://github.com/stevegrubb/libcap-ng/blob/master/COPYING.LIB
+
+---
+
+## zlib
+
+- Source: https://zlib.net/
+- License: zlib License
+- License Text: https://zlib.net/zlib_license.html
+
+---
+
+## Go runtime and standard library
+
+- Source: https://go.dev/
+- License: BSD 3-Clause License
+- License Text: https://go.dev/LICENSE
+
+---
+
+## libagw (amnezia-gateway-sdk)
+
+- Source: https://github.com/amnezia-vpn/libagw
+- License: **not specified**. As of 2026-10-14 the upstream repository has no LICENSE file and its README states no license.
+- Note: without a license, redistribution rights for this library are unclear. It is the client for the AmneziaVPN API gateway (Amnezia Premium and related services).
